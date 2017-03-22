@@ -1,0 +1,1 @@
+/* A function that counts the number of signups*/

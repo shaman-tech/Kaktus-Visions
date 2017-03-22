@@ -1,0 +1,26 @@
+{
+  "name": "kaktusvisions",
+  "version": "1.0.0",
+  "description": "Online webportal for Kaktus Visions.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaman-tech/Kaktus-Visions.git"
+  },
+  "author": "Peter Gordon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaman-tech/Kaktus-Visions/issues"
+  },
+  "homepage": "https://github.com/shaman-tech/Kaktus-Visions#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
