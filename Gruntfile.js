@@ -9,7 +9,7 @@ module.exports = function(grunt){
         dest: 'scripts/scripts.js',
       },
       css: {
-        src: ['css/main.css',],
+        src: ['css/output.css',],
         dest: 'scripts/styles.css',
       },
     },
