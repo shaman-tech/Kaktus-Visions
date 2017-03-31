@@ -1,38 +1,35 @@
-/* collects and stores signups */
+var people = (function(){
+
+  var people = ['Jo'];
+
+  //cacheDom
+  $el = $('#container');
+  $input = $el.find('input');
+  $button = $el.find('button');
+
+  //Bind Events
+
+  $button.on('click',addPerson);
+  update();
+
+  //functions
+
+  function addPerson(value){
+      var person = (typeof value === "string") ? value : $input.val();
+      people.push(person);
+      update();
+      $input.val('');
 
 
-var people = {
+  }
 
-    people: [],
+  function update(){
+      count.updateNum(people.length);
 
-    init: function () {
-          this.cacheDom();
-          this.bindEvents();
-          //this.render();
+  }
 
-    },
-    cacheDom: function() {
-        this.$el = $('#container');
-        this.$input = this.$el.find('input');
-        this.$button = this.$el.find('button');
 
-    },
-
-    bindEvents: function(){
-
-        this.$button.on("click", this.addPerson.bind(this));
-    },
-    render: function(){
-
-            //print results
-
-    },
-    addPerson: function(){
-
-            console.log('hello');
-
-    }
-
-  };
-
-  people.init();
+  return {
+    addPerson: addPerson
+  }
+})()
