@@ -9,7 +9,7 @@ var count = (function(){
 
     function _render(){
 
-      $span.html(Mustache.render(template, {number: number}))
+      $span.html(Mustache.render(template, {number: number}));
 
     }
 
