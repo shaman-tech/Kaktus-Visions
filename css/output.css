@@ -8,14 +8,14 @@ section {
   display: block; }
 
 #header h1 {
-  color: green;
+  color: red;
   font-size: 60px;
   margin: 30px auto;
   padding: 0 35%;
   text-align: center; }
 
 #header div {
-  background-color: aquamarine;
+  background-color: none;
   margin-bottom: 10px; }
 
 #container div {

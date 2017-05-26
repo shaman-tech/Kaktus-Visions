@@ -3,37 +3,129 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="scripts/styles.css">
-
+<script> src='handlebars-v4.0.5.js'</script>
 <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
 
 
 </head>
 <body>
-    <section id='header'>
+  //Section 1
+
+    <section id='hero'> // set background image
       <div>
-          <h1> Pizza Party</h1>
-      </div>
-    </section>
+          <h1> Kulcha Link</h1> // Replace title with logo
+        </div>
+        <div>
+            <p>
+                Order the <span>delivery</span> of
+                <span>handmade craft</span>
+                made by
+                <span>Authentic Jamaica</span>
+                to anywhere in
+                <span>Kingston</span>
+            </p>
+            <div>
+                <form>
+                    <input id="sign_ups" type='text' name='fullname' placeholder="Please enter name"><br/>
 
-    <section id= 'container'>
-          <div>
-              <form>
-                  <input id="sign_ups" type='text' name='fullname' placeholder="Please enter name"><br/>
-
-              </form>
-              <button id="submit_button">Submit</button>
-          </div>
-          <div id= 'stats'>
-          <script id='stats-temp' type= 'text/template'>
-              {{#number}}
-                  <span>{{.}}</span>
-              {{/number}}
-          </script>
+                </form>
+                <button id="submit_button">Order Now</button>
+            </div>
         </div>
     </section>
 
-    <section id= 'footer'>
+// Section 2
+    <section id= 'section_2'>
+        <hr>
+        <h1>Handmade-Craft At Your Fingetips</h1>
+        <hr>
 
+        <br/>
+
+        <div>
+            <img src="#" alt="Search for an item icon" />
+            <p>
+              Unlock your phone open our
+              Kulcha app and search
+              through a variety of
+              entrepreneurs.
+
+            </p>
+
+        </div>
+
+        <div>
+            <img src="#" alt="Delivery icon representing the delivery option of app" />
+            <p>
+              Select your item(s) go to check out,
+              set your location
+              and confirm purchase.
+            </p>
+        </div>
+
+        <div>
+           <img src="#" alt="Icon illustrating user waiting " />
+           <p>
+              Sit back relax, hit the beach and chill,
+              you will be notified as soon as your
+              delivery has arrived.
+           </p>
+        </div>
+          <div id= 'stats'>
+
+          <script src='node_modules/mustache/mustache.js'></script>
+          <script id='stats-temp' type= 'text/template'>
+
+                  <span>Number: {{number}}</span>
+
+          </script>
+
+        </div>
+
+    </section>
+
+//Section 3
+    <section id="section_3">
+          <div id="col_left">
+
+              <ol>
+                  <li>
+                    Search
+                  </li>
+
+                  <li>
+                    Order
+                  </li>
+
+                  <li>
+                    Wait
+                  </li>
+              </ol>
+
+          </div>
+
+          <div id="col_right">
+            <img src="#" alt="Image of app on iPhone" />
+          </div>
+
+    </section>
+
+//Footer
+    <section id= 'footer'>
+      <div>
+      <img src="#" alt="Wheel image"/>
+    </div> // Yellow border bottom
+    <div>
+      <p>About Us</p>
+      <div class="mediaStyle">
+        <img src="" alt="Social Media Icon" />
+        <img src="" alt="Social Media Icon" />
+        <img src="" alt="Social Media Icon" />
+      </div>
+    </div>
+    <p>
+      (c) 2017 Kulcha Inc.
+    </p>
     </section>
     <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>

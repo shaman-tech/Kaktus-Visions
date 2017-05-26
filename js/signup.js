@@ -1,6 +1,6 @@
 var people = (function(){
 
-  var people = ['Jo'];
+  var people = [];
 
   //cacheDom
   $el = $('#container');
@@ -25,11 +25,11 @@ var people = (function(){
 
   function update(){
       count.updateNum(people.length);
-
-  }
+    }
 
 
   return {
     addPerson: addPerson
   }
+
 })()

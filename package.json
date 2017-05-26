@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/shaman-tech/Kaktus-Visions#readme",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "handlebars": "^4.0.6",
+    "mustache": "^2.3.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

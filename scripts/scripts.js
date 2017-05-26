@@ -1,30 +1,27 @@
 /* A function that counts the number of signups*/
 var count = (function(){
 
-    var number = 0;
-    var $span = $('#stats').find('span');
-    var template = $('#stats-temp').html();
 
-    alert(people);
+    var number = 0;
+    var $div = $('#stats');
+    var template = $div.find('#stats-temp').html();
+
+    _render();
 
     function _render(){
 
-      $span.html(Mustache.render(template, {number: number}));
+    $div.html(Mustache.render(template, {number: number}));
 
     }
 
     function updateNum(value){
         number = value;
         _render();
-
-
-
     }
 
     return {
         updateNum: updateNum
-
-    }
+      }
 
 })()
 
@@ -33,7 +30,7 @@ creates html doc */
 
 var people = (function(){
 
-  var people = ['Jo'];
+  var people = [];
 
   //cacheDom
   $el = $('#container');
@@ -58,13 +55,13 @@ var people = (function(){
 
   function update(){
       count.updateNum(people.length);
-
-  }
+    }
 
 
   return {
     addPerson: addPerson
   }
+
 })()
 
 // Pub sub pattern
