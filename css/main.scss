@@ -4,14 +4,22 @@
 body{
 
     font-family: 'Baloo Bhaina', cursive;
-
+    margin: 0;
+    margin-top:-20px;
 
 }
 
 section {
 
     width:100%;
+    height: 100%;
     display:block;
+    background-attachment: fixed;
+
+    background-size: 1300px;
+    // background-position: 50% 0%;
+    background-repeat: no-repeat;
+
 
 }
 
@@ -28,12 +36,15 @@ section {
     }
 }
 
-#header {
+#hero {
+    background-image: url('https://c1.staticflickr.com/5/4227/34818568401_ffe1166505_h.jpg');
+    background-repeat: no-repeat;
+    width:100%;
+
 
         div{
 
-            background-color: none;
-            margin-bottom:10px;
+
         }
 }
 
